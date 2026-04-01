@@ -6,38 +6,56 @@
     <title>Perfumaria</title>
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
+
 <body>
 
-<div class="container">
-    <h2>Perfumes</h2>
+    <div class="container">
+        <h2>Perfumes</h2>
 
-    <!-- PRODUTO 1 -->
-    <div class="produto">
-        <img src="./src/img/perfume.png" alt="Perfume 1">
-        <div class="informacao">
-            <span class="tituloPerfume">Perfume 1</span>
-            <button class="adicionarCarrinho">Adicionar ao carrinho</button>
+        <!-- PRODUTO 1 -->
+        <div class="produto">
+            <img src="./src/img/perfume.png" alt="Perfume 1" id="imgPerfume1">
+            
+            <div class="informacao">
+                <span id="tituloPerfume1" class="tituloPerfume">
+                    Perfume 1
+                </span>
+
+                <button class="adicionarCarrinho">
+                    Adicionar ao carrinho
+                </button>
+            </div>
+        </div>
+
+        <!-- PRODUTO 2 -->
+        <div class="produto">
+            <img src="./src/img/perfume2.png" alt="Perfume 2" id="imgPerfume2">
+            
+            <div class="informacao">
+                <span id="tituloPerfume2" class="tituloPerfume">
+                    Perfume 2
+                </span>
+
+                <button class="adicionarCarrinho">
+                    Adicionar ao carrinho
+                </button>
+            </div>
+        </div>
+
+        <!-- CARRINHO -->
+        <div id="carrinho">
+            <h3>Carrinho</h3>
+
+            <!-- ITENS VÃO AQUI -->
+            <div id="itensCarrinho"></div>
+
+            <button id="comprarPerfumes">
+                Comprar selecionados
+            </button>
         </div>
     </div>
 
-    <!-- PRODUTO 2 -->
-    <div class="produto">
-        <img src="./src/img/perfume2.png" alt="Perfume 2">
-        <div class="informacao">
-            <span class="tituloPerfume">Perfume 2</span>
-            <button class="adicionarCarrinho">Adicionar ao carrinho</button>
-        </div>
-    </div>
+    <script src="./src/js/script.js"></script>
 
-    <!-- CARRINHO -->
-    <div id="carrinho">
-        <h3>Carrinho</h3>
-        <div id="itensCarrinho"></div>
-        <button id="comprarPerfumes">Comprar selecionados</button>
-    </div>
-
-</div>
-
-<script src="./src/js/script.js"></script>
 </body>
 </html>
