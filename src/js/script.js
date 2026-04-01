@@ -13,22 +13,22 @@ adicionar.forEach((botao) => {
         const itemCar = document.createElement("div")
         itemCar.classList.add("itemCarrinho")
 
-        // checkbox
+         
         const checkbox = document.createElement("input")
         checkbox.type = "checkbox"
         checkbox.classList.add("perfumeCarrinho")
 
-        // nome
+        
         const textoCarrinho = document.createElement("span")
         textoCarrinho.textContent = tituloPerfume
         textoCarrinho.classList.add("tituloCarrinho")
 
-        // imagem
+        
         const img = document.createElement("img")
         img.src = imgSrc
         img.width = 50
 
-        // botão remover
+        
         const btnRemover = document.createElement("button")
         btnRemover.textContent = "Remover"
         btnRemover.classList.add("removerItem")
@@ -62,7 +62,7 @@ comprar.addEventListener("click", () => {
     if (selecionados.length > 0) {
         alert("Você comprou: " + selecionados.join(", "))
         
-        // 🔥 LIMPA O CARRINHO
+        
         carrinho.innerHTML = ""
     } else {
         alert("Selecione pelo menos um produto!")
